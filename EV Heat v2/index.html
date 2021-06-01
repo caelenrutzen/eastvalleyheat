@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home|East Valley Heat</title>
+		<meta charset="utf-8">
+		<link href="styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+		    <h1 class="logo">East Valley Heat</h1>
+			<nav class="site-nav">
+				<ul>
+					<li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+					<li><a href="sauces.html"><i class="fa fa-burn site-nav--icon"></i>Sauces</a><li>
+					<li><a href="contact.html"><i class="fa fa-envelope site-nav--icon"></i>Contact</a><li>
+				</ul>
+			</nav>
+			<div class="menu-toggle">
+			    <div class="hamburger"></div>
+			</div>
+		</header>	
+			<main>
+				<img src="shelf.jpg" alt="Hot Sauce Shelf" id="hero">
+					<p>East Valley Heat has been selling high quality hot sauces in the East Valley for the past decade. The #1 goal for East Valley Heat has and always will be quality. We ensure our hot sauces we sell have been tested and tasted to help guests with their hot sauce shopping. We sell anything from classics like "Tapatio" and "Cholua" and more unknown sauces you wish you knew about. Whether you're looking for a hot sauce that'll make your mouth catch fire or a hot sauce that tastes amazing, East Valley Heat has the sauce for you.</p>
+				<div id="clear">
+					East Valley Heat<br>
+					5432 E. Power Rd<br>
+					Mesa, AZ 85209<br>
+					<a id="mobile" href="tel:480-666-6666">480-666-6666</a><br>
+					<br>
+					Hours:<br>
+					Monday-Sunday 10:00 AM-8:00 PM<br>
+				</div>
+			</main>
+			<br>
+			<footer>
+				Copyright &copy; 2017 East Valley Heat<br>
+				<a href="mailto:eastvalleyheat@gmail.com">eastvalleyheat@gmail.com</a>
+				<div class="icons">
+				    <i class="fab fa-facebook social"></i>
+				    <i class="fab fa-twitter social"></i>
+				    <i class="fab fa-instagram social"></i>
+				</div>
+			</footer>
+		</div>
+		<script src="jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script>
+            $('.menu-toggle').click(function() {
+                $('.site-nav').toggleClass('site-nav-open', 500);
+                $(this).toggleClass('open')
+            })
+        </script>
+	</body>
+</html>

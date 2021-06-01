@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact|East Valley Heat</title>
+		<meta charset="utf-8">
+		<link href="styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+		<h1 class="logo">East Valley Heat</h1>
+			<nav class="site-nav">
+				<ul>
+					<li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+					<li><a href="sauces.html"><i class="fa fa-burn site-nav--icon"></i>Sauces</a><li>
+					<li><a href="contact.html"><i class="fa fa-envelope site-nav--icon"></i>Contact</a><li>
+				</ul>
+			</nav>
+			<div class="menu-toggle">
+			    <div class="hamburger"></div>
+			</div>
+        </header>
+			<main>
+				<h2 id="contact">Contact Us</h2>
+				<p>Fill out the form below to receive more information. Required information is marked with an asterisk(*).</p>
+				<div class="container">
+				<form>
+				    <div class="row">
+				        <div class="col-25">
+					        <label for="myFName">*First Name</label>
+				        </div>
+				        <div class="col-75">
+					        <input type="text" name="myFName" id="myFName" required="required">
+					    </div>
+					</div>
+					<div class="row">
+                        <div class="col-25">
+					        <label for="myLName">*Last Name</label>
+					    </div>
+					    <div class="col-75">
+					        <input type="text" name="myLName" id="myLName" required="required">
+					    </div>
+					</div>
+					<div class="row">
+                        <div class="col-25">
+					        <label for="myEmail">*Email:</label>
+					    </div>
+					    <div class="col-75">
+					        <input type="email" name="myEmail" id="myEmail" required="required">
+					    </div>
+					</div>
+					<div class="row">
+                        <div class="col-25">
+					        <label for="myComments">Comments:</label>
+					    </div>
+					    <div class="col-75">
+					        <textarea name="myComments" id="myComments" rows="6" cols="50"></textarea>
+					    </div>
+					</div>
+					<div class="row">
+						<input id="mySubmit" type="Submit" value="Submit">
+					</div>
+				</form>
+				</div>
+			</main>
+			<br>
+			<footer>
+				Copyright &copy; 2017 East Valley Heat<br>
+				<a href="mailto:eastvalleyheat@gmail.com">eastvalleyheat@gmail.com</a>
+				<div class="icons">
+				    <i class="fab fa-facebook social"></i>
+				    <i class="fab fa-twitter social"></i>
+				    <i class="fab fa-instagram social"></i>
+				</div>
+			</footer>
+		</div>
+		<script src="jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script>
+            $('.menu-toggle').click(function() {
+                $('.site-nav').toggleClass('site-nav-open', 500);
+                $(this).toggleClass('open')
+            })
+        </script>
+	</body>
+</html>
